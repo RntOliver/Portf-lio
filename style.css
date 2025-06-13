@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"roboto", sans-serif ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Inicio do header*/
+
+.nav{
+    background-color: dimgray;
+    height: 80px;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    position:sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.nav-lista{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+}
+
+.nav-lista a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 20px;
+}
+
+.nav-lista a:hover{
+    color: #ffffff;
+}
+/* Fim do header */
+
+/* Inicio Main (MENU) */
+
+.menu{
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 80px);
+    background-image: url(images/porgramação.jpg);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+.menu h1{
+    color: #ffffff;
+    font-size: 54px;
+}
+.menu p{
+    font-size: 24px;
+    font-style:italic;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+.botao{
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 0;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.9s;
+}
+.botao:hover{
+    transform: scale(1.1);
+}
+.menu a{
+    text-decoration: none;
+    color: #000;
+}
+/* Fim do main (MENU)*/
+
+/*Inicio do sobre mim*/
+.sobre{
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.sobre img{
+    max-width: 450px;
+    border-radius: 4px;
+
+}
+.sobre div h2{
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+/*Fim do sobre mim*/
+
+/*Inicio Projetos*/
+
+.projeto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.projeto h2{
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.projeto p{
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.projeto-lista{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto img{
+    width: 28%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 12px;
+    transition: 0.9s;
+    border-radius: 6px;
+}
+
+.projeto img:hover{
+    transform: scale(1.2);
+}
+
+
+.links{
+    background-color: #000;
+    color: #ffffff;
+    border: 0;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 18px;
+    margin-top: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.9s;
+}
+
+.links:hover{
+    transform: scale(1.2);
+}
+/*Fim Projetos*/
+
+.curso{
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+.curso h2{
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+.curso p{
+    margin-bottom: 12px;
+    font-style: italic;
+}
+.curso-lista{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+.curso img{
+    width: 28%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+
+/*Inicio rodapé*/
+footer{
+    width: 100%;
+    background-color: #000;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer p{
+    margin-left: 12px;
+}
+/*Fim do rodapé*/
+
+
+/*Responsividade*/
+@media(max-width: 1050px){
+/*Resp Menu*/
+.menu{
+    font-size: 45px;
+}
+
+.menu p{
+    font-size: 10px;
+}
+
+.menu{
+    background-size: cover;
+}
+/*Fim Resp Menu*/
+
+/*Inicio resp Sobre*/
+.sobre{
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.sobre div{
+    max-width: 80%;
+}
+
+.sobre div h2{
+    font-size: 45px;
+}
+
+.sobre img{
+    width: 80%;
+    margin-top: 30px;
+}
+/*Fim resp Sobew*/
+
+
+/*Inicio Resp Projetos*/
+.projeto img{
+    width: 50%;
+}
+/*Fim Resp Projetos*/
+
+/*Inicio resp rodapé*/
+footer{
+    flex-direction: column;
+}
+
+footer h3{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+footer p{
+    margin: 0;
+}
+/*Fim Resp Rodapé*/
+}
