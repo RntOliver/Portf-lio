@@ -30,6 +30,7 @@ html{
 .nav-lista{
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
     margin-right: 28px;
 }
