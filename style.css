@@ -273,6 +273,7 @@ footer p{
 .nav{
     display: flex;
     justify-content: center;
+    margin-left: 5px;
 }
 /*Fim Resp Nav*/
 
@@ -313,6 +314,7 @@ footer{
 footer h3{
     font-size: 24px;
     margin-bottom: 8px;
+    margin-left: 5px;
 }
 
 footer p{
