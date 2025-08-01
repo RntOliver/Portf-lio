@@ -269,10 +269,12 @@ footer p{
 }
 /*Fim Resp Menu*/
 
+/*Inicio Resp Nav*/
 .nav{
     display: flex;
     justify-content: center;
 }
+/*Fim Resp Nav*/
 
 /*Inicio resp Sobre*/
 .sobre{
