@@ -154,6 +154,24 @@ html{
     border-radius: 6px;
 }
 
+.projeto a{
+    background-color: #000;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.9s;
+}
+
+.projeto a:hover{
+    transform: scale(1.2);
+}
+
 .projeto img:hover{
     transform: scale(1.2);
 }
@@ -241,7 +259,8 @@ footer p{
 }
 
 .menu p{
-    font-size: 10px;
+    font-size: 12px;
+    margin-top: 8px;
 }
 
 .menu{
