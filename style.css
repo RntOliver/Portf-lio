@@ -30,7 +30,6 @@ html{
 .nav-lista{
     display: flex;
     align-items: center;
-    justify-content: center;
     list-style: none;
     margin-right: 28px;
 }
@@ -264,10 +263,16 @@ footer p{
     margin-top: 8px;
 }
 
+
 .menu{
     background-size: cover;
 }
 /*Fim Resp Menu*/
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
 
 /*Inicio resp Sobre*/
 .sobre{
