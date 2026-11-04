@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer components {
+  .hero-section {
+    @apply container mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-12;
+  }
+  .hero-content {
+    @apply flex-1 space-y-6;
+  }
+  .hero-badge {
+    @apply inline-block px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium;
+  }
+  .hero-title {
+    @apply text-5xl md:text-6xl font-bold tracking-tight text-slate-50;
+  }
+  .hero-title-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400;
+  }
+  .hero-description {
+    @apply text-lg text-slate-400 max-w-xl leading-relaxed;
+  }
+  .hero-actions {
+    @apply flex gap-4 pt-4;
+  }
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors;
+  }
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg border border-slate-700 text-slate-300 font-medium hover:bg-slate-800 hover:text-white transition-colors;
+  }
+  .hero-image-container {
+    @apply flex-1 w-full flex justify-center md:justify-end;
+  }
+  .hero-image-wrapper {
+    @apply w-64 h-64 md:w-80 md:h-80 bg-slate-800 rounded-full border-4 border-slate-700 overflow-hidden shadow-2xl flex items-center justify-center;
+  }
+  .hero-avatar {
+    @apply w-full h-full object-cover;
+  }
+}

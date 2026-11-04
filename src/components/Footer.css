@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer components {
+  .footer-container {
+    @apply py-12 bg-slate-950 border-t border-slate-800 text-slate-400 text-sm;
+  }
+  .footer-content {
+    @apply container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6;
+  }
+  .footer-brand {
+    @apply font-bold text-slate-200 tracking-tight text-lg;
+  }
+  .footer-brand-highlight {
+    @apply text-blue-500;
+  }
+  .footer-links {
+    @apply flex flex-wrap items-center gap-6;
+  }
+  .footer-link {
+    @apply hover:text-blue-400 transition-colors;
+  }
+  .footer-copyright {
+    @apply text-slate-500 text-xs;
+  }
+}

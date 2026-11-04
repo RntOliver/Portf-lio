@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer components {
+  .about-section {
+    @apply py-20 bg-slate-900/50 border-t border-slate-800;
+  }
+  .about-container {
+    @apply container mx-auto px-6;
+  }
+  .about-header {
+    @apply mb-12;
+  }
+  .about-title {
+    @apply text-3xl font-bold text-slate-50 tracking-tight;
+  }
+  .about-divider {
+    @apply w-16 h-1 bg-blue-500 rounded mt-2;
+  }
+  .about-content {
+    @apply grid md:grid-cols-2 gap-12 items-start;
+  }
+  .about-text-container {
+    @apply space-y-4 text-slate-300 leading-relaxed;
+  }
+  .about-paragraph {
+    @apply text-base text-slate-300;
+  }
+  .about-highlight {
+    @apply text-slate-100 font-semibold;
+  }
+  .about-card-container {
+    @apply space-y-4;
+  }
+  .about-card {
+    @apply p-6 rounded-xl bg-slate-800/50 border border-slate-700/60 hover:border-slate-600 transition-colors;
+  }
+  .about-card-title {
+    @apply text-xs font-semibold text-blue-400 uppercase tracking-wider mb-1;
+  }
+  .about-card-subtitle {
+    @apply text-lg font-semibold text-slate-100;
+  }
+  .about-card-detail {
+    @apply text-sm text-slate-400 block mt-1;
+  }
+}

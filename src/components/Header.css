@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer components {
+  .header-container {
+    @apply fixed w-full top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800;
+  }
+  .header-content {
+    @apply container mx-auto px-6 h-20 flex items-center justify-between;
+  }
+  .header-logo {
+    @apply text-2xl font-bold tracking-tighter text-blue-500;
+  }
+  .header-logo-suffix {
+    @apply text-slate-50;
+  }
+  .header-nav {
+    @apply hidden md:flex gap-8 text-sm font-medium text-slate-300;
+  }
+  .nav-link {
+    @apply hover:text-blue-400 transition-colors;
+  }
+  .btn-contact {
+    @apply hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors;
+  }
+}
