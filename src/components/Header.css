@@ -19,7 +19,19 @@
   .nav-link {
     @apply hover:text-blue-400 transition-colors;
   }
+  .contact-wrapper {
+    @apply relative;
+  }
   .btn-contact {
-    @apply hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors;
+    @apply inline-flex items-center justify-center px-4 py-2 md:px-6 md:py-2.5 text-xs md:text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors cursor-pointer;
+  }
+  .contact-dropdown {
+    @apply absolute right-0 mt-2 w-52 bg-slate-800 border border-slate-700/80 rounded-xl shadow-2xl p-1.5 z-50 flex flex-col gap-1;
+  }
+  .contact-option {
+    @apply flex items-center gap-2.5 px-3 py-2 text-xs md:text-sm text-slate-200 hover:bg-slate-700/80 hover:text-white rounded-lg transition-colors;
+  }
+  .contact-option-icon {
+    @apply text-base;
   }
 }
