@@ -4,6 +4,29 @@ import "./Header.css";
 export default function Header() {
   const [showContactOptions, setShowContactOptions] = useState(false);
 
+  const handleGmailClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setShowContactOptions(false);
+
+    const isMobile = /android|iphone|ipad|ipod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Tenta abrir direto no app do Gmail
+      window.location.href = "googlegmail:///co?to=re83375741@gmail.com";
+
+      // Fallback para o cliente padrão de e-mail caso o esquema do app falhe
+      setTimeout(() => {
+        window.location.href = "mailto:re83375741@gmail.com";
+      }, 500);
+    } else {
+      // No computador, abre a versão Web em uma nova aba
+      window.open(
+        "https://mail.google.com/mail/?view=cm&fs=1&to=re83375741@gmail.com",
+        "_blank",
+      );
+    }
+  };
+
   return (
     <header className="header-container">
       <div className="header-content">
@@ -34,14 +57,8 @@ export default function Header() {
 
           {showContactOptions && (
             <div className="contact-dropdown">
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=re83375741@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-                className="contact-option"
-                onClick={() => setShowContactOptions(false)}
-              >
-                <span className="contact-option-icon">📧</span> Gmail (Web)
+              <a href="#" onClick={handleGmailClick} className="contact-option">
+                <span className="contact-option-icon">📧</span> Gmail
               </a>
               <a
                 href="mailto:re83375741@gmail.com"
